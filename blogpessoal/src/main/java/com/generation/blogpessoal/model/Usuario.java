@@ -2,8 +2,10 @@ package com.generation.blogpessoal.model;
 
 import java.util.List;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -28,6 +30,7 @@ public class Usuario {
 	@NotBlank(message = "O atributo nome é obrigatótio")
 	private String nome;
 	
+	@Schema(example = "email@email.com.br")
 	@NotBlank(message = "O atributo usuario é obrigatótio")
 	@Email(message = "Tem que receber um email valido")
 	private String usuario;
