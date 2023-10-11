@@ -27,7 +27,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/temas")
-@CrossOrigin(origins="+",allowedHeaders="*")
+@CrossOrigin(origins="*",allowedHeaders="*")
 
 public class temaController {
 	
